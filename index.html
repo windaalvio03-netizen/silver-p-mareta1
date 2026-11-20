@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Silver P Mareta — Katalog &amp; Toko Baju Modern</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Top Promo Bar -->
+  <div class="promo-bar">
+    <span>✨ Koleksi Baju Terbaru Silver P Mareta — Nyaman, Stylish &amp; Cocok untuk Berbagai Acara</span>
+  </div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="brand">
+        <span class="brand-mark">SP</span>
+        <div>
+          <span class="brand-name">Silver P Mareta</span>
+          <small class="brand-tagline">Everyday Wear &amp; Fashion Store</small>
+        </div>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#koleksi">Koleksi</a>
+        <a href="#keunggulan">Keunggulan</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="cart-btn" id="openCartBtn" aria-label="Buka Keranjang">
+          <span>Keranjang</span>
+          <span class="cart-badge" id="cartCount">0</span>
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <span class="pill">UMKM Fashion &amp; Apparel</span>
+        <h1>Tampil Rapi &amp; Stylish di Setiap Aktivitas</h1>
+        <p>
+          <strong>Silver P Mareta</strong> menghadirkan pilihan kemeja, blouse, dress, dan outer harian dengan bahan adem,
+          potongan nyaman, serta warna yang mudah dipadupadankan untuk kuliah, kerja, maupun hangout.
+        </p>
+        <div class="hero-cta">
+          <a href="#koleksi" class="btn btn-primary">Lihat Katalog</a>
+          <a href="https://shopee.co.id" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Belanja di Marketplace</a>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <strong>All Size</strong>
+            <span>&amp; Fit to XL</span>
+          </div>
+          <div>
+            <strong>100%</strong>
+            <span>Bahan Nyaman</span>
+          </div>
+          <div>
+            <strong>Fast</strong>
+            <span>Respon Admin</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <img
+          src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=80"
+          alt="Koleksi Baju Silver P Mareta"
+          class="hero-bg-img"
+        />
+        <div class="hero-visual">
+          <div class="visual-badge">Best Seller</div>
+          <h2>Mareta Daily Series</h2>
+          <p>Potongan jatuh, adem dipakai seharian, dan mudah di-mix and match.</p>
+          <div class="swatch-row" aria-label="Pilihan warna">
+            <span class="swatch" style="background:#d8b4a0" title="Warm Sand"></span>
+            <span class="swatch" style="background:#9caf88" title="Sage"></span>
+            <span class="swatch" style="background:#c9ada7" title="Rosewood"></span>
+            <span class="swatch" style="background:#4a4e69" title="Midnight Navy"></span>
+            <span class="swatch" style="background:#f2e9e4" title="Ivory"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Keunggulan -->
+  <section class="section features-section" id="keunggulan">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Kenapa Silver P Mareta?</span>
+        <h2>Kualitas Jahitan &amp; Bahan yang Diutamakan</h2>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <h3>Bahan Adem &amp; Jatuh</h3>
+          <p>Dipilih dari kain yang nyaman di kulit dan tidak gerah saat dipakai beraktivitas lama.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Jahitan Rapi</h3>
+          <p>Detail kancing, kerah, dan keliman dijahit rapi untuk ketahanan pakaian sehari-hari.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Mudah Dipadupadankan</h3>
+          <p>Desain simpel dan modern yang cocok untuk tampilan kasual, semi-formal, maupun santai.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Katalog Produk -->
+  <section class="section catalog-section" id="koleksi">
+    <div class="container">
+      <div class="section-header catalog-header">
+        <div>
+          <span class="eyebrow">Katalog Baju</span>
+          <h2>Pilihan Outfit Unggulan</h2>
+        </div>
+        <div class="search-box">
+          <input type="text" id="searchInput" placeholder="Cari model baju atau warna..." />
+        </div>
+      </div>
+
+      <!-- Filter Kategori -->
+      <div class="filter-bar" id="filterBar">
+        <button class="filter-btn active" data-category="all">Semua</button>
+        <button class="filter-btn" data-category="kemeja">Kemeja &amp; Blouse</button>
+        <button class="filter-btn" data-category="dress">Dress &amp; Tunik</button>
+        <button class="filter-btn" data-category="outer">Outer &amp; Cardigan</button>
+      </div>
+
+      <!-- Grid Produk -->
+      <div class="product-grid" id="productGrid"></div>
+    </div>
+  </section>
+
+  <!-- Kontak & Footer -->
+  <footer class="footer" id="kontak">
+    <div class="container footer-inner">
+      <div>
+        <h3>Silver P Mareta</h3>
+        <p>Katalog digital UMKM baju dan fashion harian. Tersedia dan siap dipesan melalui marketplace resmi.</p>
+      </div>
+      <div class="footer-actions">
+        <a href="https://shopee.co.id" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+          Kunjungi Marketplace
+        </a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <small>&copy; <span id="year"></span> Silver P Mareta. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <!-- Modal Keranjang -->
+  <div class="modal-backdrop" id="cartModal" aria-hidden="true">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3>Keranjang Belanja</h3>
+        <button class="close-btn" id="closeCartBtn" aria-label="Tutup">✕</button>
+      </div>
+      <div class="modal-body" id="cartItems">
+        <p class="empty-cart">Keranjang masih kosong.</p>
+      </div>
+      <div class="modal-footer">
+        <div class="total-row">
+          <span>Total Estimasi</span>
+          <strong id="cartTotal">Rp0</strong>
+        </div>
+        <button class="btn btn-primary full-width" id="checkoutMarketplaceBtn">Checkout ke Marketplace</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notifikasi -->
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
